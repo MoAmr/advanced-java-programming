@@ -1,4 +1,4 @@
-package functional;
+package functional.functional_interface;
 
 @FunctionalInterface
 public interface GreetingMessage {

@@ -1,4 +1,5 @@
-package functional;
+package functional.lambdas;
+
 
 public class Main {
 
@@ -12,5 +13,17 @@ public class Main {
         };
 
         gm.greet("Mohammed");
+
+        GreetingMessage gm2 = (String name) -> {
+            System.out.println("Hello " + name);
+        };
+
+        gm2.greet("Mohammed");
+
+        MessagePrinter mp = () -> {
+            System.out.println("This is a message");
+        };
+
+        mp.printMessage();
     }
 }
